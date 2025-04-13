@@ -1,3 +1,10 @@
-_pycache_
+__pycache__
 env
+env311
 .env
+
+
+# Mais garder les marqueurs pour que les dossiers restent visibles
+!output/.gitkeep
+!output/audio_parts/.gitkeep
+

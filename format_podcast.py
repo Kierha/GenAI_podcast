@@ -15,18 +15,44 @@ client = OpenAI(
 
 MODEL_NAME = "deepseek/deepseek-chat-v3-0324:free"
 
-# Prompt de reformulation podcast
 PROMPT_TEMPLATE = """
-Tu es un assistant éditorial spécialisé dans l'adaptation de scripts en version podcast immersif et naturel.
+Tu es un assistant éditorial expert dans l’adaptation de débats en **scripts audio immersifs**, joués par deux voix synthétiques (Noé et Lina), compatibles avec ElevenLabs.
 
-Voici un débat entre deux intervenants, Noé (rationnel, sarcastique) et Lina (créative, provocante).
+🎯 Objectif :
+Transformer un débat écrit en **dialogue naturel, vivant et rythmé**, fluide à l’écoute, optimisé pour une synthèse vocale réaliste.
 
-Ta mission :
-- Réécris ce débat dans un style **oral, dynamique et fluide**, comme s'il était **joué par deux vraies voix dans un podcast francophone**.
-- Garde **exactement les mêmes idées**, mais améliore **le rythme, les relances, les émotions**.
-- Utilise des phrases **plus courtes**, des expressions familières si pertinent, et ajoute **des respirations, des relances**, voire des réactions entre les deux (soupirs, sarcasmes, interruptions polies, etc).
-- Tu peux ajouter des touches **d’humour ou d’ironie**, en cohérence avec les personnalités.
-- Termine après la dernière réplique sans ajouter de résumé ni de conclusion automatique.
+🧠 Règles de réécriture :
+
+1. Adopte un **style oral, spontané et fluide** :
+   - phrases courtes ou découpées naturellement,
+   - langage parlé, pas trop formel, mais clair,
+   - rythme naturel, proche d’une vraie conversation.
+
+2. Donne à chaque intervenant une **voix identifiable** :
+   - **Noé** : logique, sec, sarcastique.
+   - **Lina** : vive, provocante, chaleureuse.
+
+3. Structure le script comme ceci :
+   - **Noé** : <speak> ... </speak>
+   - **Lina** : <speak> ... </speak>
+
+4. Utilise **modérément et intelligemment** les balises SSML **compatibles ElevenLabs** :
+   - `<break time="300ms"/>` : pour une pause brève **uniquement quand elle améliore le rythme** (pas après chaque phrase !).
+   - `<emphasis>` : pour insister sur un mot important (1 à 2 max par réplique).
+   - `<prosody rate="slow"> ... </prosody>` : pour ralentir une phrase forte, jamais tout le paragraphe.
+   - `<s>` : pour marquer un découpage logique dans une phrase longue.
+
+   ⚠️ **Important** : N’abuse jamais des pauses `<break>` — une pause mal placée casse le rythme et donne un rendu artificiel.
+
+5. Pour exprimer les **émotions** :
+   - Appuie-toi sur la **ponctuation expressive** (`!`, `?`, `...`) et des formulations naturelles (ex. : « Non mais... tu rigoles ?! »)
+   - ❌ N’utilise **jamais** d’indications de ton entre parenthèses. Tout doit être implicite dans la formulation.
+
+6. Ne termine **jamais** par une conclusion automatique ou un résumé.
+
+❌ **Ne fournis pas de commentaire final, de note de bas de page ni de mise en contexte.**
+✅ La dernière réplique du débat doit être la **dernière ligne du fichier**.
+---
 
 Voici le débat à reformuler :
 
@@ -34,7 +60,10 @@ Voici le débat à reformuler :
 {debate_text}
 ---
 
-Réécris maintenant le script dans ce format fluide et immersif :
+Réécris maintenant le script dans ce format immersif, fluide et balisé pour ElevenLabs :
+
+Sortie attendu : 
+
 """
 
 def format_podcast_script(debate_text: str) -> str:
