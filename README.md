@@ -1,6 +1,6 @@
 # 🎤 AI Podcast Generator
 
-Génère automatiquement un podcast immersif entre deux intelligences artificielles qui débattent sur un sujet donné.  
+Génère automatiquement un podcast immersif entre deux agents propulsés par intelligences artificielles qui débattent sur un sujet donné.  
 Ce projet combine génération de texte, reformulation audio-friendly, synthèse vocale et interface utilisateur via Streamlit.
 
 ---
