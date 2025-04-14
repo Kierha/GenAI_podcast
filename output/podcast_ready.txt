@@ -1,0 +1,19 @@
+**Noé** : <speak>Commençons par les faits. <break time="300ms"/> Le cerveau des ados n’a pas la maturité pour gérer les smartphones. <emphasis>Addiction</emphasis> aux réseaux, pornographie, baisse d’attention... <prosody rate="slow">L’interdiction avant 16 ans est une nécessité.</prosody> À moins que tu préfères ignorer la science ?</speak>  
+
+**Lina** : <speak>Oh, la science, cette nouvelle religion ! <break time="200ms"/> Noé, tu parles comme si les ados étaient des robots sous cloche. <emphasis>Newsflash</emphasis> : interdire, c’est créer de la frustration. Et ça, devine quoi ? <prosody rate="fast">Ça pousse à contourner les règles !</prosody> Et si on <emphasis>apprenait</emphasis> aux gamins à naviguer, au lieu de jouer les ayatollahs ?</speak>  
+
+**Noé** : <speak>Naviguer ? Tu veux les jeter à l’eau sans bouée ! <break time="300ms"/> Un gamin de 12 ans ne sait pas trier l’info de l’intox. <prosody rate="slow">Mais tu préfères leur offrir un compte TikTok avec leur carte d’identité ?</prosody></speak>  
+
+**Lina** : <speak>Houla, le mépris ! <break time="200ms"/> Les ados ne sont pas des crétins, Noé. <s>Avec un encadrement, ils développent un esprit critique.</s> <s>L’interdiction, c’est la solution <emphasis>paresseuse</emphasis>.</s> Et à 16 ans, c’est un peu tard pour découvrir le numérique, non ?</speak>  
+
+**Noé** : <speak><prosody rate="slow">"Encadrement adapté"... belle formule magique.</prosody> <break time="300ms"/> Dans la vraie vie : parents dépassés, écoles sous-équipées, algorithmes <emphasis>addictifs</emphasis>. Continue à rêver d’un monde idéal... pendant que la détresse psychologique explose.</speak>  
+
+**Lina** : <speak>Ah, les stats ! <prosody rate="fast">Pratique pour faire peur.</prosody> Interdire, c’est nier leur autonomie. <s>Ils ont des téléphones pour apprendre, créer, communiquer.</s> <emphasis>Autant interdire les couteaux</emphasis> parce qu’on peut se couper !</speak>  
+
+**Noé** : <speak>Comparaison boiteuse. <break time="200ms"/> Un couteau ne balance pas de dopamine H24. <s>Un téléphone basique suffit pour les appels.</s> Mais pour toi, liker des memes serait un droit fondamental ? <prosody rate="slow">Priorités, Lina.</prosody></speak>  
+
+**Lina** : <speak>Un téléphone basique ? <emphasis>Sérieusement</emphasis> ? <prosody rate="fast">Le numérique fait partie de leur vie !</prosody> Exigeons des plateformes éthiques, des cours... Bref, agissons sur le système au lieu de punir les usagers !</speak>  
+
+**Noé** : <speak>"Réac", le mot-fourre-tout ! <break time="300ms"/> Attendre que les géants du numérique deviennent gentils... <prosody rate="slow">Autant espérer des requins végétariens.</prosody> La liberté, ça s’apprend <emphasis>avec des limites</emphasis>.</speak>  
+
+**Lina** : <speak>Et la confiance, en lâchant la laisse ! <break time="200ms"/> Ton monde aseptisé me donne des frissons. Allez, j’ai un live TikTok à animer... <prosody rate="whisper">avec des chats et de la philo.</prosody> <emphasis>Mic drop</emphasis>.</speak>

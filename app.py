@@ -16,19 +16,25 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ───────────────────────────────
+# INIT SESSION STATE
+# ───────────────────────────────
+if "generation_done" not in st.session_state:
+    st.session_state.generation_done = False
+
+# ───────────────────────────────
 # EN-TÊTE
 # ───────────────────────────────
 st.title("🎙️ AI Podcast Generator")
 
 st.markdown("""
 Bienvenue sur **AI Podcast Generator**.  
-Tape un sujet de débat, et laisse deux agents d'intelligence artificielles simuler un échange vivant, mis en voix automatiquement.
+Tape un sujet de débat, et laisse deux agents d'intelligences artificielles simuler un échange vivant, mis en voix automatiquement.
 
 **Version 1.0**  
 Ce prototype génère pour l’instant **les répliques audio** entre 2 personnages (Noé et Lina), ainsi que le **script complet** au format txt.
 
-⚠️ Note : la génération audio ne peut être complétée qu’en local.
-Le service ElevenLabs bloque l’accès distant depuis un compte gratuit.
+⚠️ Note : la génération audio ne peut être complétée qu’en local.  
+Le service ElevenLabs bloque l’accès distant depuis un compte gratuit.  
 L’application est néanmoins déployée pour démontrer le bon fonctionnement de l’interface Streamlit.
 """)
 
@@ -46,16 +52,19 @@ if st.button("Générer") and sujet.strip():
         st.success("✅ Débat généré.")
 
     with st.spinner("2/3 - Adaptation en format podcast..."):
-        format_podcast_script_path = format_podcast_script(open("output/debate.txt", "r", encoding="utf-8").read())
+        format_podcast_script(open("output/debate.txt", "r", encoding="utf-8").read())
         st.success("✅ Script podcast prêt.")
 
-    with st.spinner("3/3 - Génération audio des deux premières répliques..."):
+    with st.spinner("3/3 - Génération audio du podcast..."):
         run_audio_pipeline()
         st.success("✅ Audio généré.")
 
-    # ────────────────
-    # AFFICHAGE RÉSULTAT
-    # ────────────────
+    st.session_state.generation_done = True
+
+# ───────────────────────────────
+# AFFICHAGE DES RÉSULTATS
+# ───────────────────────────────
+if st.session_state.generation_done:
     st.markdown("---")
     st.subheader("🎧 Résultat : Podcast généré")
 
