@@ -26,6 +26,10 @@ Tape un sujet de débat, et laisse deux agents d'intelligence artificielles simu
 
 **Version 1.0**  
 Ce prototype génère pour l’instant **les répliques audio** entre 2 personnages (Noé et Lina), ainsi que le **script complet** au format txt.
+
+⚠️ Note : la génération audio ne peut être complétée qu’en local.
+Le service ElevenLabs bloque l’accès distant depuis un compte gratuit.
+L’application est néanmoins déployée pour démontrer le bon fonctionnement de l’interface Streamlit.
 """)
 
 # ───────────────────────────────

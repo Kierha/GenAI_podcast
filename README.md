@@ -109,7 +109,20 @@ VOICE_LINA_ID=your_voice_id_for_lina
 
 ### 🌐 En ligne
 
-<!-- Lien URL -->
+⚠️ Actuellement non fonctionnel en ligne (compte gratuit ElevenLabs)
+L’application fonctionne intégralement en local, mais la génération audio est restreinte dans l’environnement cloud à cause des limitations du compte gratuit ElevenLabs (blocage des appels depuis une IP distante).
+
+Le projet reste déployé en ligne pour prouver la capacité de déploiement via Streamlit, mais pour une expérience complète (texte + audio), il est recommandé de le faire tourner en local.
+
+ℹ️ Important :
+L’application est hébergée sur Streamlit Cloud (compte gratuit).
+Après une période d’inactivité, elle peut être mise en veille.
+Un simple clic sur le bouton affiché à l'écran est nécessaire pour la relancer.
+Ce comportement est normal et n’impacte pas le fonctionnement du projet.
+
+<!-- Lien vers le site -->
+
+[Lien vers le site](https://aipodcast-student-ynov.streamlit.app/)
 
 Aucune installation n’est requise pour l’utilisateur final.
 
